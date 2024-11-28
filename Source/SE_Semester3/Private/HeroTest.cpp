@@ -219,7 +219,7 @@ IMPLEMENT_SIMPLE_AUTOMATION_TEST(FHeroTestLatentPoison, "CPPTests.HeroLatentPois
 	EditorContext | EAutomationTestFlags::ProductFilter)
 	bool FHeroTestLatentPoison::RunTest(const FString& Parameters)
 {
-	ADD_LATENT_AUTOMATION_COMMAND(FEditorLoadMap(FString("/Game/Tests/CPPTestMap")));
+	ADD_LATENT_AUTOMATION_COMMAND(FEditorLoadMap(FString("/Game/Tests/FTEST_ThirdPersonMap_v2")));
 	ADD_LATENT_AUTOMATION_COMMAND(FStartPIECommand(true));
 	ADD_LATENT_AUTOMATION_COMMAND(FSpawnHero);
 	ADD_LATENT_AUTOMATION_COMMAND(FPoisonHero);
